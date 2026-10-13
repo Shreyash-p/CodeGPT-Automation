@@ -1,1 +1,0 @@
-传入的文件名 args: (dict) Arguments passed to the script. function: (function) Function that returns the generated script. """ code = generate_code(func, *args, **kwargs) for key, value in args.items(): if key not in code: code[key] = value return code
